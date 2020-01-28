@@ -1,0 +1,107 @@
+.row-photo {
+  padding-top: $f76px;
+  padding-bottom: $f76px;
+
+  .bottom-line {
+    border-bottom: 1px solid rgba(64, 64, 65, 0.25);
+    margin-bottom: $f72px;
+  }
+
+  .photo-tabs {
+    ul {
+      list-style: none;
+
+      li {
+        display: block;
+        margin-right: $f100px;
+
+        a {
+          display: block;
+          font-weight: 500;
+          font-size: $f42px;
+          line-height: $f63px;
+          letter-spacing: 0.03em;
+          color: $cDark;
+          border-bottom: 3px solid transparent;
+          padding-bottom: $f8px;
+
+
+          &:hover {
+            text-decoration: none;
+            border-bottom: 3px solid $green;
+          }
+        }
+
+        &.active a {
+          text-decoration: none;
+          border-bottom: 3px solid $green;
+        }
+
+        &:nth-last-child(1) {
+          margin-right: 0;
+        }
+      }
+    }
+
+  }
+
+  .slick-track {
+    margin: initial;
+  }
+}
+
+
+.photo-tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.slider-arrow-outer {
+  > * {
+    display: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .slick-arrow {
+    position: initial;
+  }
+}
+
+.video-item {
+  a {
+    position: relative;
+
+    .play {
+      position: absolute;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  p {
+    font-size: $f18px;
+    line-height: $f23px;
+    letter-spacing: 0.01em;
+    color: $cDark;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .row-photo .photo-tabs ul li a {
+    font-size: $f28px;
+    line-height: $f42px;
+  }
+  .row-photo .bottom-line {
+    margin-bottom: $f30px;
+  }
+
+}
+

@@ -1,0 +1,32 @@
+
+.col-lg-half {
+  width: $content-xl/2;
+}
+
+.block-consult {
+  h3 {
+    font-size: $f50px;
+    line-height: $f60px;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    font-weight: normal;
+  }
+}
+
+.consult-outer {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@include media-breakpoint-down(lg) {
+  .col-lg-half {
+    width: 100%;
+  }
+  .block-consult {
+    h3 {
+      font-size: $f28px;
+      line-height: $f34px;
+      /* or 34px */
+    }
+  }
+}

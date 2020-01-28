@@ -1,0 +1,25 @@
+.corp {
+  padding-top: $f100px;
+  padding-bottom: $f100px;
+
+  .text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f16px;
+    line-height: $f24px;
+    color: $cDark;
+  }
+
+
+}
+
+.advantages {
+}
+
+@include media-breakpoint-down(lg) {
+  .corp {
+    .text {
+      font-size: $f14px;
+    }
+  }
+}
