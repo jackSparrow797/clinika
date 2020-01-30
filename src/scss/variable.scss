@@ -7,7 +7,7 @@ $orange: #fd7e14 !default;
 $yellow: #ffc107 !default;
 $green: #60B238;
 $teal: #20c997 !default;
-$cyan: #17a2b8 !default;
+$cyan: #F0CE0F;
 $white: #fff !default;
 $black: #000;
 $gray: #626262;
@@ -23,6 +23,7 @@ $bg: #201E1C;
 
 $fbase: 16;
 $f5px: #{5/$fbase}rem;
+$f6px: #{6/$fbase}rem;
 $f7px: #{7/$fbase}rem;
 $f8px: #{8/$fbase}rem;
 $f9px: #{9/$fbase}rem;
@@ -66,10 +67,12 @@ $f64px: #{64/$fbase}rem;
 $f66px: #{66/$fbase}rem;
 $f69px: #{69/$fbase}rem;
 $f72px: #{72/$fbase}rem;
+$f74px: #{74/$fbase}rem;
 $f75px: #{75/$fbase}rem;
 $f76px: #{76/$fbase}rem;
 $f80px: #{80/$fbase}rem;
 $f100px: #{100/$fbase}rem;
+$f130px: #{130/$fbase}rem;
 $f250px: #{250/$fbase}rem;
 
 
@@ -102,10 +105,10 @@ $modal-md: 535px;
 $modal-header-padding: 0 0 1rem 0;
 $modal-inner-padding: 1rem 0;
 
-$color-dot: $white;
-$color-dot-grey: #ACACAC;
-$dot-width: $f16px;
-$dot-height: $f16px;
+$color-dot: #626262;
+$color-dot-grey: #626262;
+$dot-width: $f7px;
+$dot-height: $f7px;
 
 $modal-content-bg: #434242;
 

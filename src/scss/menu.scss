@@ -11,7 +11,7 @@
   }
 
   &.fixed {
-    background: $bg;
+    background: $white;
     position: fixed;
     top: 0;
     left: 0;
@@ -70,6 +70,18 @@
     img {display: none}
   }
 }
+
+.menu-footer {
+  list-style: none;
+  a {
+    font-size: $f14px;
+    line-height: $f24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+}
+
 @include media-breakpoint-down(lg) {
   header {
     .green-link {

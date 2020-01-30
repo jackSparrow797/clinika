@@ -1,0 +1,45 @@
+.pagination {
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 $f15px;
+    &.page-item {
+      a.page-link {
+        font-size: 0;
+        display: block;
+        width: $f7px;
+        height: $f7px;
+        border: 1px solid $color-dot;
+        background: $color-dot;
+        border-radius: 100%;
+      }
+      &.active {
+        a {
+          font-size: $f14px;
+          line-height: $f40px;
+          text-align: center;
+          letter-spacing: 0.02em;
+          color: #000000;
+          width: $f40px;
+          height: $f40px;
+          background: $cyan;
+          border-radius: 100%;
+        }
+      }
+
+    }
+  }
+  .page-arrow {
+    border-top: 2px solid $color-dot;
+    border-right: 2px solid $color-dot;
+    height: $f16px;
+    width: $f16px;
+    display: block;
+    &.next {
+      transform: rotate(45deg);
+    }
+    &.prev {
+      transform: rotate(-135deg);
+    }
+  }
+}

@@ -6,10 +6,24 @@
   text-decoration-line: underline;
   text-transform: uppercase;
 }
+
 .link-grey {
   color: $gray;
 }
 
 .link-blue {
   color: #2F70BE;
+}
+
+.font-black {
+  color: $black;
+}
+.font-white {
+  color: $white;
+}
+
+.btn-outline-primary {
+  &:hover {
+    color: $white;
+  }
 }
