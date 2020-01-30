@@ -1,5 +1,5 @@
 <header class="row position-relative">
-    <div class="container d-none d-lg-block">
+    <div class="container-custom d-none d-lg-block">
         
         <div class="row align-items-center justify-content-between">
             
@@ -37,9 +37,9 @@
         </div>
         
     </div>
-    <div class="container-fluid menu-desktop d-none d-lg-block floating">
+    <div class="container-fluid menu-desktop d-none d-lg-block floating py-4">
         <div class="row">
-            <div class="container  ">
+            <div class="container-custom  ">
                 <div class="row align-items-center">
                     <div class="col-auto d-lg-none">
                         <a href="#menu-mobile" class="menu-mobile-toggle">
@@ -56,7 +56,7 @@
                          [[$menu]]
                      </div>
                     <div class="col-lg-2">
-                        <a href="#modal-order" data-toggle="modal" class="btn btn-primary br-50 btn-block">Записаться на прием</a>
+                        <a href="#modal-order" data-toggle="modal" class="btn btn-primary br-50 btn-block font-white">Записаться на прием</a>
                     </div>
                 </div>
             </div>

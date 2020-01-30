@@ -1,11 +1,4 @@
 .row-photo {
-  padding-top: $f76px;
-  padding-bottom: $f76px;
-
-  .bottom-line {
-    border-bottom: 1px solid rgba(64, 64, 65, 0.25);
-    margin-bottom: $f72px;
-  }
 
   .photo-tabs {
     ul {
@@ -14,27 +7,38 @@
       li {
         display: block;
         margin-right: $f100px;
+        position: relative;
 
         a {
-          display: block;
-          font-weight: 500;
-          font-size: $f42px;
-          line-height: $f63px;
-          letter-spacing: 0.03em;
-          color: $cDark;
-          border-bottom: 3px solid transparent;
-          padding-bottom: $f8px;
-
+          font-weight: bold;
+          font-size: $f35px;
+          line-height: $f47px;
+          text-transform: uppercase;
+          color: #232323;
 
           &:hover {
             text-decoration: none;
-            border-bottom: 3px solid $green;
           }
         }
 
-        &.active a {
-          text-decoration: none;
-          border-bottom: 3px solid $green;
+        &.active {
+          a {
+            position: relative;
+            z-index: 2;
+          }
+
+          &:after {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            content: '';
+            width: $f80px;
+            height: $f10px;
+            top: 50%;
+            margin-top: -$f5px;
+            left: 0;
+            background: #66A3EC;
+          }
         }
 
         &:nth-last-child(1) {
@@ -95,13 +99,23 @@
 }
 
 @include media-breakpoint-down(lg) {
-  .row-photo .photo-tabs ul li a {
-    font-size: $f28px;
-    line-height: $f42px;
+  .row-photo .photo-tabs ul li {
+    margin-right: $f15px;
+    a {
+      font-size: $f20px;
+      line-height: $f42px;
+    }
+    &.active:after {
+      width: $f30px;
+      height: $f6px;
+      margin-top: -3px;
+    }
+
   }
-  .row-photo .bottom-line {
-    margin-bottom: $f30px;
-  }
+
+.row-photo .bottom-line {
+  margin-bottom: $f30px;
+}
 
 }
 

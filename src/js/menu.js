@@ -44,7 +44,7 @@ $(document).ready(function () {
     });
 
 
-    $(document).on("click", ".menu-desktop ul a, .link-block", function (event) {
+    $(document).on("click", ".link-block", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
 
