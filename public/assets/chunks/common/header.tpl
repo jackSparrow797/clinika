@@ -56,7 +56,7 @@
                          [[$menu]]
                      </div>
                     <div class="col-lg-2">
-                        <a href="#modal-order" data-toggle="modal" class="btn btn-primary br-50 btn-block font-white">Записаться на прием</a>
+                        <a href="#modal-order" data-toggle="modal" class="btn btn-primary br-50 btn-block font-white btn-doctor">Записаться на прием</a>
                     </div>
                 </div>
             </div>

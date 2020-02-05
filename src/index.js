@@ -17,6 +17,8 @@ import './js/menu';
 // import './js/capcha';
 import './js/form';
 import './js/ajax';
+import './js/review';
+import './js/doctors';
 
 const IMG = require.context('./images/', true, /\.png||\.jpg/);
 // async function getComponent() {

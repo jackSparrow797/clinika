@@ -11,26 +11,30 @@
   padding: $f10px 0;
   background: none;
 }
+
 .form-group {
   margin-bottom: $f10px;
 }
 
 ::placeholder {
-  color: $input-color!important;
+  color: $input-color !important;
 }
+
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $input-color!important;
+  color: $input-color !important;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: $input-color!important;
+  color: $input-color !important;
 }
+
 label {
   font-style: normal;
   font-weight: normal;
   font-size: $f16px;
   line-height: $f19px;
   color: $input-color;
+
   a {
     font-style: normal;
     font-weight: normal;
@@ -40,6 +44,7 @@ label {
     text-decoration: underline;
   }
 }
+
 .checkbox {
   border: 1px solid $input-color;
   box-sizing: border-box;
@@ -47,4 +52,72 @@ label {
   background: none;
   width: 20px;
   height: 20px;
+}
+label.assessment {
+  cursor: pointer;
+}
+
+.assessment {
+
+
+  &.plus {
+    &::before {
+      content: url('/assets/design/images/2h9LiNzGop.png');
+    }
+
+    &::after {
+      content: url('/assets/design/images/2nZ6Tv-7Bm.png');
+      display: none;
+    }
+  }
+  &.minus {
+    &::before {
+      content: url('/assets/design/images/sOtEIBMuSh.png');
+    }
+
+    &::after {
+      content: url('/assets/design/images/3W-HlrGlSY.png');
+      display: none;
+    }
+  }
+}
+
+input:checked + .assessment  {
+  &::before {
+    display: none;
+  }
+
+  &::after {
+    display: block;
+  }
+}
+
+input + .custom-checkbox
+{
+  position: relative;
+  display: block;
+  padding-left: 36px;
+  cursor: pointer;
+  &:before {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #66A3EC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+input:checked + .custom-checkbox  {
+  &:after {
+    content: url('/assets/design/images/checked.png');
+    position: absolute;
+    left: 4px;
+    top: 0;
+  }
 }

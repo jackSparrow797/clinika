@@ -1,0 +1,36 @@
+.review-tabs {
+  list-style: none;
+  li {
+    a {
+      font-weight: normal;
+      font-size: $f18px;
+      line-height: $f25px;
+      text-decoration-line: underline;
+      color: #626262;
+
+    }
+    &.active {
+      a {
+        color: #623F86;
+      }
+    }
+  }
+}
+
+.review-item {
+  h4 {
+    font-weight: bold;
+    font-size: $f20px;
+    line-height: $f24px;
+    text-transform: uppercase;
+    color: #232323;
+  }
+}
+
+.review-tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}

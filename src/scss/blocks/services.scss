@@ -19,7 +19,7 @@
       padding-left: $f30px;
     }
 
-    .service-img {
+    .service-img img {
       position: relative;
       z-index: 2;
     }
@@ -38,36 +38,7 @@
 
     }
 
-    ul {
-      list-style: none;
 
-      li {
-        position: relative;
-
-        &:before {
-          background: #66A3EC;
-          content: "";
-          display: block;
-          width: 4px;
-          height: 4px;
-          position: absolute;
-          top: 9px;
-          left: -15px;
-          border-radius: 100%;
-        }
-
-        a {
-          font-size: $f16px;
-          line-height: $f20px;
-          letter-spacing: 0.02em;
-          color: #626262;
-
-          &:hover {
-            color: #000000;
-          }
-        }
-      }
-    }
   }
 
   .hover-open {
@@ -97,6 +68,37 @@
   }
   &:nth-of-type(1) {
     border-top: 1px solid #C4C4C4;
+  }
+}
+
+ul.dots-blue {
+  list-style: none;
+
+  li {
+    position: relative;
+
+    &:before {
+      background: #66A3EC;
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      top: 9px;
+      left: -15px;
+      border-radius: 100%;
+    }
+
+    a {
+      font-size: $f16px;
+      line-height: $f20px;
+      letter-spacing: 0.02em;
+      color: #626262;
+
+      &:hover {
+        color: #000000;
+      }
+    }
   }
 }
 

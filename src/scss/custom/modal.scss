@@ -71,6 +71,14 @@
 
   .modal-body {
     overflow-y: auto;
+    h4 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: $f22px;
+      line-height: $f38px;
+      letter-spacing: 0.04em;
+      color: #626262;
+    }
   }
 }
 
@@ -161,11 +169,12 @@
 .modal-title {
   margin-bottom: 0;
   font-style: normal;
-  font-weight: 500;
-  font-size: $f40px;
-  line-height: $f48px;
-  letter-spacing: 0.03em;
-  color: $white;
+  font-weight: bold;
+  font-size: $f26px;
+  line-height: $f38px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $modal-title-color;
 }
 
 // Modal body
@@ -268,4 +277,14 @@
   }
 }
 
-
+.modal-body {
+  overflow-y: auto;
+  h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f22px;
+    line-height: $f38px;
+    letter-spacing: 0.04em;
+    color: #626262;
+  }
+}

@@ -66,14 +66,18 @@ $f63px: #{63/$fbase}rem;
 $f64px: #{64/$fbase}rem;
 $f66px: #{66/$fbase}rem;
 $f69px: #{69/$fbase}rem;
+$f70px: #{70/$fbase}rem;
 $f72px: #{72/$fbase}rem;
 $f74px: #{74/$fbase}rem;
 $f75px: #{75/$fbase}rem;
 $f76px: #{76/$fbase}rem;
 $f80px: #{80/$fbase}rem;
 $f100px: #{100/$fbase}rem;
+$f120px: #{120/$fbase}rem;
 $f130px: #{130/$fbase}rem;
+$f150px: #{150/$fbase}rem;
 $f250px: #{250/$fbase}rem;
+$f340px: #{340/$fbase}rem;
 
 
 $content-xl: 1428px;
@@ -98,8 +102,8 @@ $container-max-widths: (
 
 $cDark: #333333;
 $color: #333333;
-$input-bottom-color: $white;
-$input-color: $white;
+$input-bottom-color: #ACACAC;
+$input-color: #1B130F;
 
 $modal-md: 535px;
 $modal-header-padding: 0 0 1rem 0;
@@ -110,6 +114,7 @@ $color-dot-grey: #626262;
 $dot-width: $f7px;
 $dot-height: $f7px;
 
-$modal-content-bg: #434242;
+$modal-content-bg: #fff;
+$modal-title-color: #000;
 
 

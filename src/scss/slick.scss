@@ -40,27 +40,29 @@
       }
     }
   }
+
+  .dot-line {
+    border-top: 2px solid $color-dot;
+    border-right: 2px solid $color-dot;
+    height: $f16px;
+    width: $f16px;
+    display: block;
+    position: absolute;
+
+    &.prev {
+      transform: rotate(-45deg);
+      top: -$f30px;
+      right: -$f8px;
+    }
+    &.next {
+      transform: rotate(135deg);
+      bottom: -$f30px;
+      right: $f6px;
+    }
+  }
 }
 
-.dot-line {
-  border-top: 2px solid $color-dot;
-  border-right: 2px solid $color-dot;
-  height: $f16px;
-  width: $f16px;
-  display: block;
-  position: absolute;
 
-  &.prev {
-    transform: rotate(-45deg);
-    top: -$f30px;
-    right: -$f8px;
-  }
-  &.next {
-    transform: rotate(135deg);
-    bottom: -$f30px;
-    right: $f6px;
-  }
-}
 
 .dots-grey .slick-dots  li {
   button {

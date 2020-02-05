@@ -1,5 +1,4 @@
 
-
 body {
   margin: 0;
   color: $color;
@@ -12,6 +11,7 @@ html, body {
 
 a {
   color: $cDark;
+
   &:hover {
     color: $cDark;
   }
@@ -69,6 +69,7 @@ h3 {
 .content-body {
   flex: 1 0 auto;
 }
+
 .position-relative {
   position: relative;
 }
@@ -78,12 +79,11 @@ footer {
 }
 
 
-
-.br-10  {
+.br-10 {
   border-radius: 10px;
 }
 
-.br-50  {
+.br-50 {
   border-radius: 50px;
 }
 
@@ -122,6 +122,7 @@ header, footer {
     line-height: $f20px;
     text-decoration-line: underline;
     color: $black;
+
     > * {
       vertical-align: middle;
     }
@@ -132,9 +133,11 @@ header, footer {
     div {
       padding: 0;
       padding-right: $f10px;
+
       &:nth-of-type(1) {
         padding-left: $f15px;
       }
+
       &:last-of-type {
         padding-right: $f15px;
       }
@@ -159,6 +162,7 @@ header, footer {
   top: 430px;
   left: -149px;
   transform: rotate(90deg);
+
   a {
     font-weight: 500;
     font-size: $f22px;
@@ -168,11 +172,13 @@ header, footer {
     color: $cDark;
   }
 }
+
 .button-right {
   position: fixed;
   top: 330px;
   right: -73px;
   transform: rotate(-90deg);
+
   a {
     font-weight: 500;
     font-size: $f22px;
@@ -180,15 +186,13 @@ header, footer {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $cDark;
+
     &.color-white {
       border-right: 13px solid $white;
     }
   }
 }
 
-.breads {
-  padding-top: $f100px;
-}
 .content-body {
   padding-bottom: $f100px;
 }
@@ -219,8 +223,14 @@ h5 {
 .border-none {
   border: 0;
 }
+
 .card {
   box-shadow: 0px 2px 10px rgba(232, 227, 243, 0.5);
+}
+
+.main-services {
+  background: url('/assets/design/images/3gh-DssFEE.png') no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 1430px) {
@@ -235,10 +245,18 @@ h5 {
     margin-bottom: $f64px;
   }
 }
+
 @include media-breakpoint-down(lg) {
+  h1 {
+    font-size: $f28px;
+    line-height: $f38px;
+    /* or 38px */
+  }
+
   .button-left {
     top: 350px;
     left: -115px;
+
     a {
       font-size: $f16px;
       line-height: $f16px;
@@ -247,6 +265,7 @@ h5 {
   .button-right {
     top: 200px;
     right: -59px;
+
     a {
       font-size: $f16px;
       line-height: $f16px;
@@ -255,6 +274,7 @@ h5 {
 
   header {
     position: relative;
+
     .address {
       font-style: normal;
       font-weight: normal;
@@ -264,9 +284,10 @@ h5 {
     }
   }
   footer {
-    font-size: $f12px!important;
+    font-size: $f12px !important;
+
     a {
-      font-size: $f12px!important;
+      font-size: $f12px !important;
     }
   }
 

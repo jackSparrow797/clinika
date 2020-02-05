@@ -1,0 +1,85 @@
+.dots-bottom {
+  ul {
+    padding: 0;
+  }
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  z-index: 9;
+
+  li {
+    display: inline-block;
+    margin: 0 $f10px;
+    vertical-align: middle;
+    button {
+      font-size: 0;
+      outline: none;
+      border-radius: 100%;
+      line-height: $f14px;
+      width: $dot-width;
+      height: $dot-height;
+      padding: 0;
+      border: 1px solid $color-dot;
+      background: $color-dot;
+    }
+
+    &.slick-active {
+      button {
+        font-size: $f14px;
+        line-height: $f13px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: $black;
+        border-radius: 100%;
+        background: $cyan;
+        padding: $f8px;
+        width: $f30px;
+        height: $f30px;
+      }
+    }
+  }
+
+  .dot-line {
+    border-top: 2px solid $color-dot;
+    border-right: 2px solid $color-dot;
+    height: $f16px;
+    width: $f16px;
+    display: block;
+    position: absolute;
+
+    &.prev {
+      transform: rotate(-135deg);
+      left: -$f30px;
+      top: $f6px;
+    }
+    &.next {
+      transform: rotate(45deg);
+      top: $f8px;
+      right: -$f30px;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .dots-bottom {
+    li {
+      button {
+        width: 15px;
+        height: 15px;
+      }
+      &.slick-active {
+        button{
+          font-size: 0;
+          border-color: #F0CE0F;
+          width: 15px;
+          height: 15px;
+          line-height: $f14px;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
